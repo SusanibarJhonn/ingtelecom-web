@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IngTelecom — Ingeniería de Telecomunicaciones</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav-bar">
+      <a href="#inicio" class="brand">
+        <span class="brand-badge">RF</span>
+        <span>IngTelecom</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#conocimiento">Conocimiento</a></li>
+        <li><a href="#calculadoras">Calculadoras</a></li>
+        <li><a href="#consultas">Consultas</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button type="button" class="btn btn-outline btn-sm" id="themeToggle" aria-label="Cambiar tema">🌙 Modo Oscuro</button>
+        <button type="button" class="btn btn-outline btn-sm mobile-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="section-tag">Ingeniería de Telecomunicaciones</span>
+          <h1>Conectando el mundo mediante <span>ondas, fibra y protocolos</span></h1>
+          <p>
+            Plataforma interactiva para explorar los fundamentos de transmisión de datos,
+            comparar medios físicos e inalámbricos y realizar cálculos reales de ingeniería.
+          </p>
+          <div class="hero-cta">
+            <a href="#calculadoras" class="btn btn-primary">Abrir Calculadoras</a>
+            <a href="#conocimiento" class="btn btn-outline">Explorar Tecnologías</a>
+          </div>
+          <div class="metrics-row">
+            <div class="metric-card">
+              <div class="metric-value">400 Gbps</div>
+              <div class="metric-label">Capacidad Troncal DWDM</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">&lt; 2 ms</div>
+              <div class="metric-label">Latencia Ultra Baja 5G</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">99.999%</div>
+              <div class="metric-label">Disponibilidad Core Red</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="diagram-card">
+          <svg viewBox="0 0 420 260" width="100%" role="img" aria-label="Arquitectura de red de telecomunicaciones">
+            <line x1="95" y1="62" x2="210" y2="128" stroke="#0284c7" stroke-width="2.5" class="pulse-line" />
+            <line x1="325" y1="62" x2="210" y2="128" stroke="#059669" stroke-width="2.5" class="pulse-line" />
+            <line x1="210" y1="128" x2="210" y2="205" stroke="#0284c7" stroke-width="2.5" class="pulse-line" />
+            <rect x="25" y="25" width="140" height="52" rx="10" fill="rgba(2,132,199,0.12)" stroke="#0284c7" stroke-width="1.5" />
+            <text x="95" y="48" text-anchor="middle" fill="currentColor" font-size="12" font-weight="700">Satélite LEO</text>
+            <text x="95" y="65" text-anchor="middle" fill="#64748b" font-size="10">Banda Ka / Ku</text>
+            <rect x="255" y="25" width="140" height="52" rx="10" fill="rgba(5,150,105,0.12)" stroke="#059669" stroke-width="1.5" />
+            <text x="325" y="48" text-anchor="middle" fill="currentColor" font-size="12" font-weight="700">Estación Base 5G</text>
+            <text x="325" y="65" text-anchor="middle" fill="#64748b" font-size="10">Massive MIMO</text>
+            <rect x="125" y="104" width="170" height="54" rx="12" fill="rgba(2,132,199,0.18)" stroke="#0284c7" stroke-width="2" />
+            <text x="210" y="128" text-anchor="middle" fill="currentColor" font-size="13" font-weight="800">Core Fibra DWDM</text>
+            <text x="210" y="145" text-anchor="middle" fill="#64748b" font-size="10">Enrutamiento IP / MPLS</text>
+            <rect x="120" y="190" width="180" height="50" rx="10" fill="rgba(5,150,105,0.12)" stroke="#059669" stroke-width="1.5" />
+            <text x="210" y="213" text-anchor="middle" fill="currentColor" font-size="12" font-weight="700">Acceso FTTH &amp; Wi-Fi 7</text>
+            <text x="210" y="229" text-anchor="middle" fill="#64748b" font-size="10">Hogar / Empresa / IoT</text>
+          </svg>
+          <p class="diagram-caption">Flujo integrado entre enlaces inalámbricos, red troncal óptica y acceso final.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="conocimiento">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Fundamentos Técnicos</span>
+          <h2>Áreas Clave de las Telecomunicaciones</h2>
+          <p>Pilares fundamentales que permiten transportar voz, video y datos a escala global.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-icon">OSI</div>
+            <h3>Redes y Protocolos</h3>
+            <p>Arquitectura TCP/IP, enrutamiento dinámico (OSPF, BGP), conmutación VLAN y control de congestión.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">RF</div>
+            <h3>Radiofrecuencia y Antenas</h3>
+            <p>Propagación electromagnética, cálculo de pérdidas en espacio libre, ganancia de antenas y enlaces microondas.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">FO</div>
+            <h3>Fibra Óptica y Fotónica</h3>
+            <p>Transmisión guiada por pulsos láser, multiplexación por longitud de onda (DWDM) y baja atenuación por kilómetro.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">DSP</div>
+            <h3>Procesamiento Digital (DSP)</h3>
+            <p>Modulación digital (QAM, OFDM), filtrado de ruido, muestreo de Nyquist y codificación de canal.</p>
+          </article>
+        </div>
+
+        <div class="table-box">
+          <div class="table-toolbar">
+            <div>
+              <h3>Comparativa de Medios y Estándares</h3>
+              <small class="muted-text">Filtra por medio, frecuencia, velocidad o uso principal.</small>
+            </div>
+            <input type="search" id="techFilter" class="search-input" placeholder="Buscar (ej. Fibra, 5G, Wi-Fi, Satélite)..." aria-label="Filtrar tecnologías" />
+          </div>
+
+          <div class="table-responsive">
+            <table id="techTable">
+              <thead>
+                <tr>
+                  <th>Medio / Estándar</th>
+                  <th>Tipo de Canal</th>
+                  <th>Velocidad Típica</th>
+                  <th>Alcance</th>
+                  <th>Aplicación Principal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Fibra Monomodo (OS2)</strong></td>
+                  <td><span class="badge">Óptico</span></td>
+                  <td>100 Gbps – 400 Gbps</td>
+                  <td>Hasta 80+ km sin repetir</td>
+                  <td>Redes troncales submarinas y metropolitanas</td>
+                </tr>
+                <tr>
+                  <td><strong>Fibra Multimodo (OM4)</strong></td>
+                  <td><span class="badge">Óptico</span></td>
+                  <td>10 Gbps – 100 Gbps</td>
+                  <td>Hasta 400 m</td>
+                  <td>Centros de datos y enlaces entre edificios</td>
+                </tr>
+                <tr>
+                  <td><strong>5G NR (Sub-6 / mmWave)</strong></td>
+                  <td><span class="badge">Inalámbrico</span></td>
+                  <td>1 Gbps – 10 Gbps</td>
+                  <td>300 m – 5 km</td>
+                  <td>Telefonía móvil, vehículos conectados e industria</td>
+                </tr>
+                <tr>
+                  <td><strong>Wi-Fi 7 (IEEE 802.11be)</strong></td>
+                  <td><span class="badge">Inalámbrico</span></td>
+                  <td>Hasta 30 Gbps</td>
+                  <td>30 m – 100 m</td>
+                  <td>Redes locales inalámbricas de alta densidad</td>
+                </tr>
+                <tr>
+                  <td><strong>Enlace Satelital LEO</strong></td>
+                  <td><span class="badge">Espacial</span></td>
+                  <td>100 Mbps – 500 Mbps</td>
+                  <td>Cobertura global</td>
+                  <td>Conectividad rural, marítima y zonas remotas</td>
+                </tr>
+                <tr>
+                  <td><strong>Cable Par Trenzado Cat 6A</strong></td>
+                  <td><span class="badge">Cobre</span></td>
+                  <td>10 Gbps</td>
+                  <td>Hasta 100 m</td>
+                  <td>Cableado estructurado empresarial y PoE</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="calculadoras">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Herramientas Prácticas</span>
+          <h2>Calculadoras de Ingeniería</h2>
+          <p>Alterna entre el cálculo de presupuesto de enlace RF y la estimación de transferencia de datos.</p>
+        </div>
+
+        <div class="tabs-bar" role="tablist">
+          <button type="button" class="tab-btn active" data-tab="tab-rf" role="tab" aria-selected="true">1. Presupuesto de Enlace RF (Link Budget)</button>
+          <button type="button" class="tab-btn" data-tab="tab-download" role="tab" aria-selected="false">2. Tiempo de Descarga y Ancho de Banda</button>
+        </div>
+
+        <div id="tab-rf" class="tab-panel active">
+          <div class="calc-grid">
+            <div>
+              <div class="form-group">
+                <label for="txPower">Potencia del Transmisor P_tx (dBm)</label>
+                <input type="number" id="txPower" class="form-control" value="20" step="0.5" />
+              </div>
+              <div class="input-row">
+                <div class="form-group">
+                  <label for="txGain">Ganancia Antena Tx (dBi)</label>
+                  <input type="number" id="txGain" class="form-control" value="12" step="0.5" />
+                </div>
+                <div class="form-group">
+                  <label for="rxGain">Ganancia Antena Rx (dBi)</label>
+                  <input type="number" id="rxGain" class="form-control" value="12" step="0.5" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="pathLoss">Pérdidas Totales en Trayecto y Cables (dB)</label>
+                <input type="number" id="pathLoss" class="form-control" value="98" min="0" step="0.5" />
+              </div>
+              <div>
+                <small class="muted-label">Ejemplos rápidos:</small>
+                <div class="presets-row">
+                  <button type="button" class="btn btn-outline btn-sm" data-preset="wifi">Wi-Fi Interior</button>
+                  <button type="button" class="btn btn-outline btn-sm" data-preset="ptp">Radioenlace 5 GHz</button>
+                  <button type="button" class="btn btn-outline btn-sm" data-preset="fibra">Enlace Fibra Óptica</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-box">
+              <div>
+                <small class="result-caption">POTENCIA RECIBIDA (P_rx)</small>
+                <div class="result-highlight" id="rxResult">-54.00 dBm</div>
+                <div id="linkQualityText" class="quality-text">Señal Excelente</div>
+              </div>
+              <div class="meter-track"><div class="meter-fill" id="signalMeter"></div></div>
+              <ul class="result-list">
+                <li><span>Potencia Tx lineal:</span> <strong id="txLinear">100.00 mW (0.1000 W)</strong></li>
+                <li><span>Ganancia neta antenas:</span> <strong id="netGain">+24.00 dBi</strong></li>
+                <li><span>Fórmula aplicada:</span> <code>P_rx = P_tx + G_tx + G_rx - L</code></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="tab-download" class="tab-panel">
+          <div class="calc-grid">
+            <div>
+              <div class="input-row">
+                <div class="form-group">
+                  <label for="fileSize">Tamaño del Archivo</label>
+                  <input type="number" id="fileSize" class="form-control" value="4.5" min="0.01" step="0.1" />
+                </div>
+                <div class="form-group">
+                  <label for="fileUnit">Unidad</label>
+                  <select id="fileUnit" class="form-control">
+                    <option value="MB">Megabytes (MB)</option>
+                    <option value="GB" selected>Gigabytes (GB)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="netSpeed">Velocidad de Conexión (Mbps)</label>
+                <input type="number" id="netSpeed" class="form-control" value="300" min="0.1" step="1" />
+              </div>
+              <div>
+                <small class="muted-label">Cargar escenario:</small>
+                <div class="presets-row">
+                  <button type="button" class="btn btn-outline btn-sm" data-dl="500,MB,50">Actualización 500 MB (50 Mbps)</button>
+                  <button type="button" class="btn btn-outline btn-sm" data-dl="25,GB,600">Video 4K 25 GB (Fibra 600 Mbps)</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="result-box">
+              <div>
+                <small class="result-caption">TIEMPO ESTIMADO DE TRANSFERENCIA</small>
+                <div class="result-highlight" id="downloadTime">2 min 0 s</div>
+                <small class="muted-text">Calculado en base estándar (1 Byte = 8 bits).</small>
+              </div>
+              <ul class="result-list">
+                <li><span>Total de datos:</span> <strong id="totalBits">36,000 Megabits</strong></li>
+                <li><span>Tasa real en MB/s:</span> <strong id="mbPerSec">37.50 MB/s</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="consultas">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interacción sin Backend</span>
+          <h2>Bandeja de Consultas Técnicas</h2>
+          <p>
+            Registra preguntas o casos prácticos. Los datos se validan, se guardan localmente en tu navegador
+            y pueden exportarse en <code>.txt</code>, <code>.json</code> o abrirse en tu cliente de correo.
+          </p>
+        </div>
+
+        <div class="consultas-grid">
+          <div class="card">
+            <h3 class="card-title">Nueva Consulta</h3>
+            <form id="consultaForm" novalidate>
+              <div class="form-group">
+                <label for="userName">Nombre completo</label>
+                <input type="text" id="userName" class="form-control" placeholder="Ej. Jhonn Susanibar" required />
+              </div>
+              <div class="form-group">
+                <label for="userEmail">Correo electrónico</label>
+                <input type="email" id="userEmail" class="form-control" placeholder="estudiante@universidad.edu.pe" required />
+              </div>
+              <div class="form-group">
+                <label for="userTopic">Área de consulta</label>
+                <select id="userTopic" class="form-control" required>
+                  <option value="">Selecciona un tema...</option>
+                  <option value="Redes y Protocolos">Redes y Protocolos (TCP/IP, Routing)</option>
+                  <option value="Radiofrecuencia y Antenas">Radiofrecuencia y Enlaces Inalámbricos</option>
+                  <option value="Fibra Óptica">Fibra Óptica y Sistemas DWDM</option>
+                  <option value="Proyecto / Exposición">Consulta sobre el Proyecto Web</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="userMessage">Mensaje o caso técnico</label>
+                <textarea id="userMessage" class="form-control" rows="4" placeholder="Escribe tu consulta aquí..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Guardar Consulta en Bandeja</button>
+              <div class="status-msg" id="formFeedback" role="status"></div>
+            </form>
+          </div>
+
+          <div class="card">
+            <div class="inbox-header">
+              <h3>Consultas Guardadas (<span id="inboxCount">0</span>)</h3>
+              <div class="inbox-actions">
+                <button type="button" class="btn btn-outline btn-sm" id="exportTxtBtn">Exportar .TXT</button>
+                <button type="button" class="btn btn-outline btn-sm" id="exportJsonBtn">Exportar .JSON</button>
+                <button type="button" class="btn btn-outline btn-sm" id="clearInboxBtn">Limpiar</button>
+              </div>
+            </div>
+            <div class="inbox-list" id="inboxList"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>IngTelecom</strong> — Proyecto Académico de Ingeniería de Telecomunicaciones (HTML5, CSS3 &amp; JavaScript).</p>
+    </div>
+  </footer>
+
+  <script src="java.js"></script>
+</body>
+</html>
